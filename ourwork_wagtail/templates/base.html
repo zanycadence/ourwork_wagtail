@@ -27,7 +27,17 @@
 
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
+        <header class="navbar">
+            <section class="navbar-section">
+                <a href="/" class="navbar-brand mr-2">OurWork</a>
 
+            </section>
+            <section class="navbar-section">
+                <a href="..." class="btn btn-link">Students</a>
+                <a href="..." class="btn btn-link">Mentors</a>
+                <a href="..." class="btn btn-link">Community</a>
+            </section>
+        </header>
         {% block content %}{% endblock %}
 
         {# Global javascript #}
