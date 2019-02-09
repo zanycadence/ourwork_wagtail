@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load static %}
+{% load static wagtailcore_tags %}
 
 {% block body_class %}template-communitypage{% endblock %}
 
@@ -9,4 +9,7 @@
 
 {% block content %}
 <p>this is where we onboard a student and submit to backend...</p>
+<a href="{% slugurl 'select-mentor' %}">
+    <button class="btn">Go to Mentor Selection</button>
+</a>
 {% endblock content %}

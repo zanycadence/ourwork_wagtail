@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load static %}
+{% load static wagtailcore_tags %}
 
 {% block body_class %}template-communitypage{% endblock %}
 
@@ -9,4 +9,5 @@
 
 {% block content %}
 <p>this is where mentor content goes</p>
+<a href="{% slugurl 'job-pool' %}"><button class="btn">mentor views jobs that need matches</button></a>
 {% endblock content %}

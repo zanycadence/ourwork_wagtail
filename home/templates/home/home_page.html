@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load static %}
+{% load static wagtailcore_tags %}
 
 {% block body_class %}template-homepage{% endblock %}
 
@@ -11,11 +11,11 @@
  <div class="columns">
      <div class="column">
          <div class="hero hero-lg bg-primary">
-            <h1>OurWork</h1>
+            <h1>PromotorEd</h1>
             <p>Learn. Connect. Earn.</p>
             <div class="columns">
                 <div class="column is-1">
-                <button class="btn">Get Started</button>
+                <a href="{% slugurl 'onboard' %}"><button class="btn">Get Started</button></a>
                 </div>
             </div>
             
