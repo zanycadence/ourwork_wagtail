@@ -3,6 +3,7 @@ from django.db import models
 # we need to map strings to integers for making actual predictions
 class Member(models.Model):
     ### background - match with the mentor on this
+    m_id = models.CharField(max_length=10,default='null')
     job = models.CharField(max_length=100)
     location = models.CharField(max_length=100)
 
