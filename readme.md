@@ -8,7 +8,7 @@ Recommendations
 
 Data generation
 ---
-+ Kanguroo generate features
++ Mockaroo generate features
 - Populate database with generated data (translated with mapping)
 
 API
