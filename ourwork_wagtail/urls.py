@@ -8,7 +8,16 @@ from wagtail.documents import urls as wagtaildocs_urls
 
 from search import views as search_views
 
+from api.resources import MemberResource
+from api.resources import ContractSpecResource
+
+member_resource = MemberResource()
+contract_spec_resource = ContractSpecResource()
+
 urlpatterns = [
+    url(r'^api/', include(member_resource.urls)),
+    url(r'^api/', include(contract_spec_resource.urls)),
+    
     url(r'^django-admin/', admin.site.urls),
 
     url(r'^admin/', include(wagtailadmin_urls)),
