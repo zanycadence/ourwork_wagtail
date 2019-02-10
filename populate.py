@@ -6,6 +6,10 @@ currDir = os.path.dirname(os.path.realpath('__file__'))
 #csvFile = os.path.join(currDir,"../dataset/member.csv")
 
 csvFile = os.path.join(currDir,"dataset/new_members.csv")
+
+members=list(Member.objects.all().values())
+print(members)
+
 with open(csvFile) as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
@@ -19,7 +23,26 @@ with open(csvFile) as csvfile:
         new_member.save()
 
 
+def blah(obj):
+        model = Model()
+        if obj.mentor == 'null':
+            #job=job_to_feature[self.job]
+            mentor_ids = model.predict_mentor(list(Member.objects.all().values()),obj.job, obj.location)
+            print("recommended mentors" + str(mentor_ids))
+            # default : assigning the mentor with the highest rank
+            #if len(mentor_ids)>0:
+            obj.mentor = mentor_ids[0]
 
+
+    
 members=list(Member.objects.all().values())
+
 for member in members:
-    member.blah()
+    member_id = member['id']
+    t = Member.objects.get(id=member_id)
+    blah(t)
+    t.save()
+
+#members=list(Member.objects.all().values())
+
+

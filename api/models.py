@@ -29,7 +29,7 @@ class Member(models.Model):
     location = models.CharField(max_length=100)
 
     ### will be set on create
-    mentors = models.TextField(default='null')
+    #mentors = models.TextField(default='null')
     mentor = models.TextField(default='null')
 
     ### track/specialization, will be set on create after matched with mentor
