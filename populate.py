@@ -5,12 +5,12 @@ from api.models import *
 currDir = os.path.dirname(os.path.realpath('__file__'))
 #csvFile = os.path.join(currDir,"../dataset/member.csv")
 
-csvFile = os.path.join(currDir,"dataset/new_member.csv")
+csvFile = os.path.join(currDir,"dataset/new_members.csv")
 with open(csvFile) as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         r_mid = row['id']
-        r_job = row['job']
+        r_job = row['industry']
         r_location = row['location']
         r_track = row['track']
         r_track_progress = row['progress']
