@@ -1,3 +1,5 @@
+{% load static wagtailcore_tags %}
+
 <div class="columns mentor-item">
     <div class="column col-2">
         <img src="../../../static/img/mentor_select/sumit@2x.png" alt="" class="img-responsive mentor-avatar">
@@ -12,7 +14,7 @@
     <div class="column col-4">
         <div class="mentor-btns">
             <button class="btn">Deny</button>
-            <button class="btn btn-secondary">Accept</button>
+            <a href="{% slugurl 'student' %}"><button class="btn btn-secondary">Accept</button></a>
         </div>
     </div>
 </div>

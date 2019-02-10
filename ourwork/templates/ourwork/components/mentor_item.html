@@ -1,3 +1,5 @@
+{% load static wagtailcore_tags %}
+
 <div class="columns mentor-item">
     <div class="column col-2">
         <img src="../../static/img/mentor_select/sumit@2x.png" alt="" class="img-responsive mentor-avatar">
@@ -6,7 +8,7 @@
         <h4>Timus Latep</h4>
         <p>Web Developer, Cisco<br />
         Previous: Bus Driver, Long Beach<br />
-        <a href="">Learn More...</a>
+        <a href="{% slugurl 'mentor-details' %}">Learn More...</a>
         </p>
     </div>
     <div class="column col-4">
