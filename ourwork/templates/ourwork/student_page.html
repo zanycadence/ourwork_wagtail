@@ -8,6 +8,45 @@
 {% endblock extra_css %}
 
 {% block content %}
-<p>this is where student content goes</p>
+<header class="hero member-profile-banner">
+    <div class="columns">
+        <div class="column col-2 col-ml-auto">
+            <img src="../static/img/student_dashboard/kirill@2x.png" alt="" class="img-responsive">
+        </div>
+        <div class="column col-9 member-banner-title">
+            <h2>My Dashboard</h2>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column col-10 col-mx-auto bg-white">
+        <div class="columns">
+            <div class="column col-10 col-mx-auto progress-div">
+                <progress class="progress course-progress" value="5" max="100"></progress>
+            </div>
+        </div>
+        </div>
+    </div>
+</header>
+<div class="columns">
+    <div class="column col-10 col-mx-auto bg-white course-list">
+        {% include './components/course_list_item.html' %}
+        <div class="divider"></div>
+        {% include './components/course_list_item.html' %}
+        <div class="divider"></div>
+        {% include './components/course_list_item.html' %}
+        <div class="divider"></div>
+        {% include './components/course_list_item.html' %}
+        <div class="divider"></div>
+        {% include './components/course_list_item.html' %}
+        <div class="divider"></div>
+    </div>
+    
+</div>
+
+
+
+
+
+
 <a href="{% slugurl 'course' %}"><button class="btn">Student selects a course and goes to the course page</button></a>
 {% endblock content %}

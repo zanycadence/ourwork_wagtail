@@ -19,10 +19,10 @@
                     <div class="container">
                         <div class="columns">
                             <div class="column col-4 col-mx-auto">
-                                <form action="" class="onboard-survey">
+                                <form action="{% slugurl 'select-mentor' %}" class="onboard-survey" method="GET" >
                                     <div class="form-group">
                                         <label for="job_role" class="form-label">1. Most Recent Job Role</label>
-                                        <input id="job_role" type="text" class="form-input">
+                                        <input id="job_role" type="text" class="form-input" name="job" >
                                     </div>
                                     <div class="form-group">
                                         <label for="industry_select" class="form-label">2. Industry</label>
@@ -36,16 +36,17 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="location" class="form-label">3. Location</label>
-                                        <input id="location" type="text" class="form-input">
+                                        <input id="location" type="text" class="form-input" name="location" >
                                     </div>
 
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-secondary p-centered">Next</button>
-                                        <a href="{% slugurl 'select-mentor' %}">
-                                            <button class="btn p-centered">Go to Mentor Selection</button>
-                                        </a>
+
                                     </div>
                                 </form>
+                                                                        <a href="{% slugurl 'select-mentor' %}">
+                                            <button class="btn p-centered">Go to Mentor Selection</button>
+                                        </a>
                             </div>
                         </div>
                     </div>

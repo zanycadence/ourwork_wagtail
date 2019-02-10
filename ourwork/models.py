@@ -23,6 +23,10 @@ class SelectMentorPage(Page):
     pass
 
 
+class MentorDetailPage(Page):
+    pass
+
+
 class CoursePage(Page):
     pass
 

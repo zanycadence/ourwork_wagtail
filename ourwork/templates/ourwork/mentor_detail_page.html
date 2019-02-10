@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static wagtailcore_tags %}
+
+{% block body_class %}template-communitypage{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/ourwork.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<div class="container">
+    <div class="columns mt-85">
+        <div class="column col-9 col-mx-auto">
+            <div class="card">
+                <div class="card-header">
+                    {% include './components/mentor_item.1.html' %}
+                </div>
+                <div class="card-body">
+                <div class="columns">
+                    <div class="column col-9 col-mx-auto">
+                        <h3>About</h3>
+                        <p>I was a bus driver for 15 years, and everything changed when I heard about PromotorEd at a community event in Long Beach.  Their mission to empower local communities with tech educated resonated with me.  I enrolled into their program with no experience and PromotorEd equipped me with the necessary skills and a knowlegeable mentor to help me become a web developer.  From my great experience at PromotorEd, I’d like to help impact others through the program as mentor for students. </p>
+                        <h3>Tracks Taken</h3>
+                        <p>Web Development<br />
+                           UX/UI Design
+                        </p>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="{% slugurl 'student' %}">
+    <button class="btn">Select a mentor and move on to student overview page</button>   
+</a>
+{% endblock content %}

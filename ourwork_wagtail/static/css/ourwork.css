@@ -3707,3 +3707,75 @@ header.navbar-rect
 {
     margin-top: 55px;
 }
+
+.mentor-item
+{margin-top: 30px; 
+    margin-left: 45px;
+}
+
+.mentor-avatar
+{
+    width: 125px;
+}
+
+.mentor-btns
+{
+    padding: 30px;
+}
+
+.mentor-btns .btn
+{padding-right: 20px; 
+    padding-left: 20px;
+}
+
+.mentor-btns .btn.btn-secondary
+{
+    margin-left: 24px;
+}
+
+.member-profile-photo
+{
+    width: 195px;
+}
+
+.member-profile-banner
+{padding-bottom: 0; 
+
+    background: rgba(19, 158, 145, .25);
+}
+
+.member-banner-title
+{
+    padding-top: 90px; padding-bottom: 90px;
+}
+
+.member-banner-status
+{
+    bottom: 0;
+}
+
+.course-avatar
+{
+    max-width: 107px;
+}
+
+.course-progress
+{height: .6rem; 
+
+    color: #009688;
+}
+
+.progress-div
+{padding-top: 1rem; 
+    padding-bottom: 1rem;
+}
+
+.course-list .column
+{margin-bottom: 1rem; 
+    padding-top: 1rem;
+}
+
+.course-list .column .btn
+{
+    margin-top: 33px; padding-right: 15px; padding-left: 15px;
+}

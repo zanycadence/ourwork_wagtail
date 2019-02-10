@@ -8,6 +8,25 @@
 {% endblock extra_css %}
 
 {% block content %}
+<div class="container">
+    <div class="columns mt-85">
+        <div class="column col-9 col-mx-auto">
+            <div class="card">
+                <div class="card-header bg-4 text-center">
+                    <div class="card-title h1 card-title-survey">Meet Your Future Mentor!</div>
+                </div>
+                <div class="card-body">
+                {% include './components/mentor_item.html' %}
+                {% include './components/mentor_item.html' %}
+                {% include './components/mentor_item.html' %}
+                {% include './components/mentor_item.html' %}
+                {% include './components/mentor_item.html' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <p>this is where we show potential mentors and allow the user to select a mentor.</p>
 <a href="{% slugurl 'student' %}">
     <button class="btn">Select a mentor and move on to student overview page</button>   
