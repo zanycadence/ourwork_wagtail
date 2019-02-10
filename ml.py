@@ -1,6 +1,6 @@
-## ML goes here -->
 import pandas as pd
 from api.models import * 
+
 
 class Model():
 	# 2 - mentor code
@@ -20,8 +20,6 @@ class Model():
 		df2=df2.sort_values('score',ascending=False)
 		print(df2[0:filters])
 		return df2[0:filters]['id']
-
-
 
 # 1  - student
 	def match_skills(self,db,project,location_int=None,filters=5):
