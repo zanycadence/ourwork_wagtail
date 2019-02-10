@@ -81,12 +81,12 @@ class Member(models.Model):
     def save(self, *args, **kwargs):
         print("save is called!")
         ## happens on first save
+
         model = Model()
         
         if self.mentors == 'null':
             print("no mentor, assigning recomendtations!")
             job=job_to_feature[self.job]
-
             mentor_ids = model.predict_mentor(list(Member.objects.all().values()),job, self.location)
 
             print("recommended mentors" + str(mentor_ids))
