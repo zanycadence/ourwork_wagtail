@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load static %}
+{% load static wagtailcore_tags %}
 
 {% block body_class %}template-communitypage{% endblock %}
 
@@ -41,7 +41,7 @@
                         You can access all the resources available which will teach you everything about HTML. The links are helpful for the aspiring Web Designers and Developers.</p>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-secondary float-right">Start Course</button>
+                        <a href="{% slugurl 'course' %}"><button class="btn btn-secondary float-right">Start Course</button>
                     </div>
                 </div>
             </div>

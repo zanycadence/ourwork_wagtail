@@ -1,9 +1,11 @@
+{% load {% static wagtailcore_tags %}
+
 <div class="columns">
     <div class="column col-2 col-ml-auto">
         <img src="../../static/img/student_dashboard/html@2x.png" alt="" class="img-responsive course-avatar">
     </div>
     <div class="column col-9 ">
         <h3>HTML Fundamentals</h3>
-        <button class="btn btn-secondary">View Course Materials</button>
+        <a href="{% slugurl 'course-prep' %}"><button class="btn btn-secondary">View Course Details</button></a>
     </div>
 </div>
