@@ -8,20 +8,91 @@
 {% endblock extra_css %}
 
 {% block content %}
+<header>
  <div class="columns">
      <div class="column">
-         <div class="hero hero-lg bg-primary">
-            <h1>PromotorEd</h1>
-            <p>Learn. Connect. Earn.</p>
-            <div class="columns">
-                <div class="column is-1">
-                <a href="{% slugurl 'onboard' %}"><button class="btn">Get Started</button></a>
+         <div class="hero hero-lg hero-image">
+            <div class="columms">
+                <div class="column col-6 col-mx-auto">
+                    <h2 class="text-light text-center">Transitioning The Next Workforce</h2>
+                    <p class="text-light text-center">Empowering Minorities to the Future with Tech</p>
+                    <a href="{% slugurl 'onboard' %}">
+                        <button class="p-centered btn btn-secondary join-btn">Create Account</button>
+                    </a>
                 </div>
-            </div>
-            
+            </div>  
          </div>
      </div>
  </div>
+ </header>
+ <main>
+<div class="container">
+    <div class="columns">
+        <div class="column col-8 col-mx-auto">
+            <h2 class="text-center text-tertiary mt-40">Tech Development Courses Online</h2>
+            <p class="text-center text-tertiary">Learn In-Demand Skills Today and Advance Your Careers</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="columns">
+            <div class="column col-10 col-mx-auto">
+                <div class="columns">
+                <div class="column col-3 col-mx-auto">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{% static 'img/home/account-group-outline@2x.png' %}" alt="" class="img-responsive p-centered home-card">
+                    </div>
+                    <div class="card-header">
+                        <div class="card-title h6 text-center">
+                            <p class="mb-0">Mentor & Community</p>
+                        </div>
+                    </div>
+                    <div class="card-body home-card-txt-div">
+                        <p class="pt-30 home-card-txt">Match with a mentor that you connect with and chat with a community of fellow students.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-1 col-mx-auto"></div>
+            <div class="column col-3 col-mx-auto">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{% static 'img/home/book-open-page-variant@2x.png' %}" alt="" class="img-responsive p-centered home-card">
+                    </div>
+                    <div class="card-header">
+                        <div class="card-title h6 text-center">
+                            <p class="mb-0">Tech Courses</p>
+                        </div>
+                    </div>
+                    <div class="card-body home-card-txt-div">
+                        <p class="pt-30 home-card-txt">We offer courses to equip students with skills in technology fields such as front end dev., back end dev., UX/UI, etc...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-1 col-mx-auto"></div>
+            <div class="column col-3 col-mx-auto">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{% static 'img/home/ribbon@2x.png' %}" alt="" class="img-responsive p-centered home-card">
+                    </div>
+                    <div class="card-header">
+                        <div class="card-title h6 text-center">
+                            <p class="mb-0">Build a Career</p>
+                        </div>
+                    </div>
+                    <div class="card-body home-card-txt-div">
+                        <p class="pt-30 home-card-txt">After completing courses and demonstrating proof of knowledge, get assigned to jobs from community businesses.</p>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ </main>
 
 
 {% endblock content %}
