@@ -1,5 +1,5 @@
 from django.db import models
-
+from ml import * 
 # helpers ml <-> model
 
 def flip_dict(d):
@@ -16,7 +16,7 @@ def array_to_string(arr):
     return s[:-1]
 
 job_to_feature = {
-    "Truck Driver": 0
+    "Driver": 0
     , "Burgers": 1
     , "Cashier": 2
     }
@@ -45,18 +45,18 @@ class Member(models.Model):
     def save(self, *args, **kwargs):
         print("save is called!")
         ## happens on first save
-
-
-        # need to do after
-        print(self.mentors)
+        model = Mentor_Model()
+        
         if self.mentors == 'null':
             print("no mentor, assigning recomendtations!")
-            ml.mentor.train([ ml.to_background_feature(member) for member in Member.objects.all()) ])
-            mentor_ids = ml.mentor.predict(job_to_feature[self.job], int(self.location))
+            job=job_to_feature[self.job]
+
+            mentor_ids = model.predict(list(Member.objects.all().values()),job, self.location)
 
             print("recommended mentors" + str(mentor_ids))
-            self.mentors = array_to_string(mentor_ids)
-        
+            # default : assigning the mentor with the highest rank
+            if len(mentor_ids)>0:
+                self.mentors = mentor_ids[0]
         super(Member, self).save(*args, **kwargs)
 
         
