@@ -3648,6 +3648,11 @@ button.join-btn
     margin-top: 40px;
 }
 
+.mt-85
+{
+    margin-top: 85px;
+}
+
 .text-tertiary
 {
     color: #003c36;
@@ -3676,4 +3681,9 @@ button.join-btn
 .bg-white
 {
     background: #fff;
+}
+
+header.navbar-rect
+{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
 }
