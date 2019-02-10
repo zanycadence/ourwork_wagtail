@@ -7,10 +7,10 @@ Progress
 | implemented        | page             | dependencies |
 | ------------------ | ---------------- | ------------ |
 | :white_check_mark: | Enroll           | Api: `POST /member/ -> { mentors: [ mentor1, mentor2 ]}`; Model: `mentorModel.predict(job, location)` |
-| :exlamation:       | Select mentor    | Frontend: carry selected mentor to next page |
-| :exlamation:       | Complete course  | Api: `POST /member/` (update track_progress to: Project); Frontend: assume the same course that the mentor has will be taken; Model: `modelSkills.predict(member.skills)` |
-| :exlamation:       | Get project      | Api: `GET /member/:id/ -> { ..., assigned_project: projectJSON }` |
-| :exlamation:       | Become mentor    | Frontend: assume static page |
+| :exclamation:       | Select mentor    | Frontend: carry selected mentor to next page |
+| :exclamation:       | Complete course  | Api: `POST /member/` (update track_progress to: Project); Frontend: assume the same course that the mentor has will be taken; Model: `modelSkills.predict(member.skills)` |
+| :exclamation:       | Get project      | Api: `GET /member/:id/ -> { ..., assigned_project: projectJSON }` |
+| :exclamation:       | Become mentor    | Frontend: assume static page |
 
 
 #### Mentor:
