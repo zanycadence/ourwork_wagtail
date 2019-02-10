@@ -8,6 +8,224 @@
 {% endblock extra_css %}
 
 {% block content %}
-<p>this is where job content page will go...</p>
-<a href="{% slugurl 'match'%} "><button class="btn">mentor~ will select a specific job and assign roles and match workers</button></a>
+<div class="columns job-pool">
+    <div class="column col-10 col-mx-auto">
+        <div class="columns">
+            <div class="column col-8">
+                <h4>Job Listings:</h4>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="job">
+                            <div class="columns">
+                                <div class="column col-8">
+                                    <h4>Needs Website</h4>
+                                    <p>Prateechi's Nails</p>
+                                </div>
+                                <div class="column col-4">
+                                    <div class="columns">
+                                        <div class="column col-9 text-right"><a href="{% slugurl 'job-skills'%}">Tag Skills</a></div>
+                                        <div class="column col-3">
+                                        </div>
+                                    </div>
+
+                                    <div class="columns">
+                                        <div class="column col-9 text-right"><a href="{% slugurl 'job-skills'%}">Assign Mentee</a></div>
+                                        <div class="column col-3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="job">
+                            <div class="columns">
+                                <div class="column col-8">
+                                    <h4>Require an Analyst</h4>
+                                    <p>A Library, The Coffee Shop</p>
+                                </div>
+                                <div class="column col-4">
+                                    <div class="columns">
+                                        <div class="column col-9 text-right">Skills Tagged</div>
+                                        <div class="column col-3">
+                                        <img src="../../static/img/job_list/ic-check-copy-2@2x.png" alt="" class="img-responsive job-checked p-centered">
+                                        </div>
+                                    </div>
+
+                                    <div class="columns">
+                                        <div class="column col-9 text-right">Mentee Assigned</div>
+                                        <div class="column col-3">
+                                        <img src="../../static/img/job_list/ic-check-copy-2@2x.png" alt="" class="img-responsive job-checked p-centered">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="job">
+                            <div class="columns">
+                                <div class="column col-8">
+                                    <h4>Backend Developer</h4>
+                                    <p>Code Put Agency</p>
+                                </div>
+                                <div class="column col-4">
+                                    <div class="columns">
+                                        <div class="column col-9 text-right">Skills Tagged</div>
+                                        <div class="column col-3">
+                                        <img src="../../static/img/job_list/ic-check-copy-2@2x.png" alt="" class="img-responsive job-checked p-centered">
+                                        </div>
+                                    </div>
+
+                                    <div class="columns">
+                                        <div class="column col-9 text-right">Mentee Assigned</div>
+                                        <div class="column col-3">
+                                        <img src="../../static/img/job_list/ic-check-copy-2@2x.png" alt="" class="img-responsive job-checked p-centered">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="job">
+                            <div class="columns">
+                                <div class="column col-8">
+                                    <h4>UX Designer</h4>
+                                    <p>Long Beach Sports Store</p>
+                                </div>
+                                <div class="column col-4">
+                                    <div class="columns">
+                                        <div class="column col-9 text-right">Skills Tagged</div>
+                                        <div class="column col-3">
+                                        <img src="../../static/img/job_list/ic-check-copy-2@2x.png" alt="" class="img-responsive job-checked p-centered">
+                                        </div>
+                                    </div>
+
+                                    <div class="columns">
+                                        <div class="column col-9 text-right">Mentee Assigned</div>
+                                        <div class="column col-3">
+                                        <img src="../../static/img/job_list/ic-check-copy-2@2x.png" alt="" class="img-responsive job-checked p-centered">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="job">
+                            <div class="columns">
+                                <div class="column col-8">
+                                    <h4>Web Developer Needed</h4>
+                                    <p>Max’s Tattoos</p>
+                                </div>
+                                <div class="column col-4">
+                                    <div class="columns">
+                                        <div class="column col-9 text-right">Skills Tagged</div>
+                                        <div class="column col-3">
+                                        <img src="../../static/img/job_list/ic-check-copy-2@2x.png" alt="" class="img-responsive job-checked p-centered">
+                                        </div>
+                                    </div>
+
+                                    <div class="columns">
+                                        <div class="column col-9 text-right">Mentee Assigned</div>
+                                        <div class="column col-3">
+                                        <img src="../../static/img/job_list/ic-check-copy-2@2x.png" alt="" class="img-responsive job-checked p-centered">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+            <div class="column col-4">
+                <h4>Top Candidates:</h4>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="worker">
+                            <div class="columns">
+                                <div class="column col-3">
+                                    <img src="../../static/img/job_list/alison@2x.png" alt="" class="p-centered img-responsive worker-avatar">
+                                </div>
+                                <div class="column col-6">
+                                    <h5>Alison Brown</h5>
+                                    Track: Data Analysis <br />
+                                    Completion: 90%
+                                </div>
+                                <div class="column col-3 match-div">
+                                    <button class="btn btn-secondary p-centered match-button">Match</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="worker">
+                            <div class="columns">
+                                <div class="column col-3">
+                                    <img src="../../static/img/job_list/james-bryant@2x.png" alt="" class="p-centered img-responsive worker-avatar">
+                                </div>
+                                <div class="column col-6">
+                                    <h5>James Bryant</h5>
+                                    Track: Web Dev. <br />
+                                    Completion: 80%
+                                </div>
+                                <div class="column col-3 match-div">
+                                    <button class="btn btn-secondary p-centered match-button">Match</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="worker">
+                            <div class="columns">
+                                <div class="column col-3">
+                                    <img src="../../static/img/job_list/rajan@2x.png" alt="" class="p-centered img-responsive worker-avatar">
+                                </div>
+                                <div class="column col-6">
+                                    <h5>Rajan Patel</h5>
+                                    Track: Web Dev. <br />
+                                    Completion: 80%
+                                </div>
+                                <div class="column col-3 match-div">
+                                    <button class="btn btn-secondary p-centered match-button">Match</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="worker">
+                            <div class="columns">
+                                <div class="column col-3">
+                                    <img src="../../static/img/job_list/ryan-wu@2x.png" alt="" class="p-centered img-responsive worker-avatar">
+                                </div>
+                                <div class="column col-6">
+                                    <h5>Ryan Wu</h5>
+                                    Track: Web Dev. <br />
+                                    Completion: 80%
+                                </div>
+                                <div class="column col-3 match-div">
+                                    <button class="btn btn-secondary p-centered match-button">Match</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="worker">
+                            <div class="columns">
+                                <div class="column col-3">
+                                    <img src="../../static/img/job_list/alison@2x.png" alt="" class="p-centered img-responsive worker-avatar">
+                                </div>
+                                <div class="column col-6">
+                                    <h5>Nancy Latuno</h5>
+                                    Track: Design <br />
+                                    Completion: 80%
+                                </div>
+                                <div class="column col-3 match-div">
+                                    <button class="btn btn-secondary p-centered match-button">Match</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock content %}

@@ -41,3 +41,11 @@ class JobPage(Page):
 
 class MatchPage(Page):
     pass
+
+
+class JobSkills(Page):
+    pass
+
+
+class JobSkillsMatch(Page):
+    pass

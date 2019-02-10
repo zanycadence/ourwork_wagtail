@@ -1,0 +1,234 @@
+{% extends "base.html" %}
+{% load static wagtailcore_tags %}
+
+{% block body_class %}template-communitypage{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/ourwork.css' %}">
+{% endblock extra_css %}
+
+{% block content %}
+<div class="columns job-pool">
+    <div class="column col-10 col-mx-auto">
+        <div class="columns">
+            <div class="column col-8">
+                <h4>Job Listings:</h4>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="job">
+                            <div class="columns">
+                                <div class="column col-6">
+                                <h4>Needs Website</h4>
+                                <p>Prateechi's Nails</p>
+                                </div>
+                                <div class="column col-6">
+                                    <strong>Location:</strong> Long Beach, CA<br />
+                                    <strong>Phone:</strong> (909) 867-5309
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column col-12">
+                                    <h5>Job Description:</h5>
+                                    <p>I am looking for a website developer who can build a website that lets people book appointments online.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="columns">
+                                <div class="column col-12">
+                                    <h5>Skills Needed</h5>
+                                    <div class="columns">
+                                        <div class="column col-4">
+                                            <div class="form-group">
+                                                <label class="form-checkbox">
+                                                    <input type="checkbox">
+                                                    <i class="form-icon"></i> HTML
+                                                </label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="form-checkbox">
+                                                    <input type="checkbox">
+                                                    <i class="form-icon"></i> SQL
+                                                </label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="form-checkbox">
+                                                    <input type="checkbox">
+                                                    <i class="form-icon"></i> Python
+                                                </label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="form-checkbox">
+                                                    <input type="checkbox">
+                                                    <i class="form-icon"></i> Tableau
+                                                </label>
+                                            </div>                                        
+                                        
+                                        </div>
+                                        <div class="column col-4">
+                                            <div class="form-group">
+                                                <label class="form-checkbox">
+                                                    <input type="checkbox">
+                                                    <i class="form-icon"></i> CSS
+                                                </label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="form-checkbox">
+                                                    <input type="checkbox">
+                                                    <i class="form-icon"></i> MongoDB
+                                                </label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="form-checkbox">
+                                                    <input type="checkbox">
+                                                    <i class="form-icon"></i> R
+                                                </label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="form-checkbox">
+                                                    <input type="checkbox">
+                                                    <i class="form-icon"></i> MATLAB
+                                                </label>
+                                            </div>                                        
+                                                                            
+                                        
+                                        </div>
+                                        <div class="column col-4">
+                                            <div class="form-group">
+                                                <label class="form-checkbox">
+                                                    <input type="checkbox">
+                                                    <i class="form-icon"></i> JavaScript
+                                                </label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="form-checkbox">
+                                                    <input type="checkbox">
+                                                    <i class="form-icon"></i> NodeJS
+                                                </label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="form-checkbox">
+                                                    <input type="checkbox">
+                                                    <i class="form-icon"></i> C/C++
+                                                </label>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="form-checkbox">
+                                                    <input type="checkbox">
+                                                    <i class="form-icon"></i> SAS
+                                                </label>
+                                            </div>                                        
+                                                                            
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="card-footer float-right"><a href="{% slugurl 'job-skills-match' %}"><button class="btn btn-secondary">Find Candidates</button></a></div>
+                </div>
+                
+            </div>
+            <div class="column col-4">
+                <h4>Top Candidates:</h4>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="worker">
+                            <div class="columns">
+                                <div class="column col-3">
+                                    <img src="../../static/img/job_list/alison@2x.png" alt="" class="p-centered img-responsive worker-avatar">
+                                </div>
+                                <div class="column col-6">
+                                    <h5>Alison Brown</h5>
+                                    Track: Data Analysis <br />
+                                    Completion: 90%
+                                </div>
+                                <div class="column col-3 match-div">
+                                    <button class="btn btn-secondary p-centered match-button">Match</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="worker">
+                            <div class="columns">
+                                <div class="column col-3">
+                                    <img src="../../static/img/job_list/james-bryant@2x.png" alt="" class="p-centered img-responsive worker-avatar">
+                                </div>
+                                <div class="column col-6">
+                                    <h5>James Bryant</h5>
+                                    Track: Web Dev. <br />
+                                    Completion: 80%
+                                </div>
+                                <div class="column col-3 match-div">
+                                    <button class="btn btn-secondary p-centered match-button">Match</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="worker">
+                            <div class="columns">
+                                <div class="column col-3">
+                                    <img src="../../static/img/job_list/rajan@2x.png" alt="" class="p-centered img-responsive worker-avatar">
+                                </div>
+                                <div class="column col-6">
+                                    <h5>Rajan Patel</h5>
+                                    Track: Web Dev. <br />
+                                    Completion: 80%
+                                </div>
+                                <div class="column col-3 match-div">
+                                    <button class="btn btn-secondary p-centered match-button">Match</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="worker">
+                            <div class="columns">
+                                <div class="column col-3">
+                                    <img src="../../static/img/job_list/ryan-wu@2x.png" alt="" class="p-centered img-responsive worker-avatar">
+                                </div>
+                                <div class="column col-6">
+                                    <h5>Ryan Wu</h5>
+                                    Track: Web Dev. <br />
+                                    Completion: 80%
+                                </div>
+                                <div class="column col-3 match-div">
+                                    <button class="btn btn-secondary p-centered match-button">Match</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="worker">
+                            <div class="columns">
+                                <div class="column col-3">
+                                    <img src="../../static/img/job_list/alison@2x.png" alt="" class="p-centered img-responsive worker-avatar">
+                                </div>
+                                <div class="column col-6">
+                                    <h5>Nancy Latuno</h5>
+                                    Track: Design <br />
+                                    Completion: 80%
+                                </div>
+                                <div class="column col-3 match-div">
+                                    <button class="btn btn-secondary p-centered match-button">Match</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

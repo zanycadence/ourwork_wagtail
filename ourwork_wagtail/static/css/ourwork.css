@@ -3824,3 +3824,28 @@ img.course-status
 {
     padding-top: 16px;
 }
+
+.job-pool
+{
+    margin-top: 70px;
+}
+
+.job .columns
+{
+    margin-top: 12px;
+}
+
+.match-div
+{
+    margin-top: 20px;
+}
+
+.match-button
+{
+    margin: 0 auto;
+}
+
+.job-checked
+{
+    height: 14px;
+}
