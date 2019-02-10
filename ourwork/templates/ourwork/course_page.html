@@ -8,5 +8,44 @@
 {% endblock extra_css %}
 
 {% block content %}
-<p>this is where course content page will go...</p>
+<div class="columns">
+    <div class="column col-10 col-mx-auto course-title">
+        <h3>HTML Fundamentals</h3>
+
+        <div class="columns course-card">
+            <div class="column col-7">
+                <div class="card">
+                    <div class="card-header course-page">
+                        <div class="card-title h5">Course Progress</div>
+                    </div>
+                    <div class="card-body course-page-sub">
+                    4 / 5 Exercises Approved
+                    <div class="columns">
+                        <div class="column col-8 progress-div">
+                            <progress class="progress course-progress" value="80" max="100"></progress>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="columns course-card">
+            <div class="column col-12">
+                <div class="card">
+                    <div class="card-header course-page">
+                        <div class="card-title h4">Exercises</div>
+                    </div>
+                    <div class="card-body course-page-sub">
+                        {% include './components/course_task.html' %}
+                        {% include './components/course_task.html' %}
+                        {% include './components/course_task.html' %}
+                        {% include './components/course_task_fail.html' %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}

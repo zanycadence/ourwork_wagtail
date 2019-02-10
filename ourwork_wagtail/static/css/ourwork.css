@@ -3794,3 +3794,28 @@ header.navbar-rect
 {
     margin-top: 45px;
 }
+
+.course-card
+{
+    margin-top: 40px;
+}
+
+.course-page .card-title
+{margin-bottom: .8rem; 
+    margin-left: 30px;
+}
+
+.course-page-sub
+{
+    margin-top: 0; margin-left: 30px;
+}
+
+img.course-status
+{
+    max-width: 23px;
+}
+
+.course-task
+{
+    margin-top: 14px; margin-bottom: 14px;
+}
