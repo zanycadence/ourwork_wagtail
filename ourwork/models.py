@@ -27,6 +27,10 @@ class MentorDetailPage(Page):
     pass
 
 
+class CoursePrep(Page):
+    pass
+
+
 class CoursePage(Page):
     pass
 

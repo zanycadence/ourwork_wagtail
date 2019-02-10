@@ -3779,3 +3779,18 @@ header.navbar-rect
 {
     margin-top: 33px; padding-right: 15px; padding-left: 15px;
 }
+
+.course-title
+{
+    margin-top: 70px;
+}
+
+.columns .course-info-card
+{
+    margin-top: 64px;
+}
+
+.course-mentor
+{
+    margin-top: 45px;
+}

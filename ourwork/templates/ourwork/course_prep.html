@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body_class %}template-communitypage{% endblock %}
+
+{% block extra_css %}
+{% endblock extra_css %}
+
+{% block content %}
+<div class="columns course-title">
+    <div class="column col-10 col-mx-auto">
+        <h3>HTML Fundamentals: Course Info</h3>
+    </div>
+</div>
+<div class="columns">
+    <div class="column col-10 col-mx-auto">
+        <div class="columns">
+            <div class="column col-4 course-info-card">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../../static/img/mentor_select/sumit@2x.png" alt="" class="img-responsive mentor-avatar p-centered course-mentor">
+                    </div>
+                    <div class="card-header text-center">
+                        <div class="card-title h5">Meet w/ Timus</div>
+                    </div>
+                    <div class="card-body text-center">
+                        <p>Timus will be available:
+                        <ul>
+                            <li>CSULB - 02/11/19 6pm-9pm</li>
+                            <li>CSULB - 02/13/19 6pm-9pm</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-8 course-info-card">
+                <div class="card">
+                    <div class="card-body">
+                    
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-secondary float-right">Start Course</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
