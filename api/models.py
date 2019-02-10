@@ -41,7 +41,8 @@ class Member(models.Model):
     ### will be logicaly ored with the track that they are on
     skills = models.TextField()
 
-    def save(self, *args, **kwargs):
+    #def save(self, *args, **kwargs):
+    def blah(self, *args, **kwargs):
         print("save is called!")
         ## happens on first save
 
@@ -56,7 +57,7 @@ class Member(models.Model):
             # default : assigning the mentor with the highest rank
             if len(mentor_ids)>0:
                 self.mentors = mentor_ids[0]
-        super(Member, self).save(*args, **kwargs)
+       # super(Member, self).save(*args, **kwargs)
 
         
 class ContractSpec(models.Model):

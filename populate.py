@@ -18,4 +18,8 @@ with open(csvFile) as csvfile:
         new_member = Member(m_id=r_mid,job=r_job,location=r_location,track=r_track,track_progress=r_track_progress,skills=r_skills)
         new_member.save()
 
-# m=Member.objects.all().values()
+
+
+members=list(Member.objects.all().values())
+for member in members:
+    member.blah()
