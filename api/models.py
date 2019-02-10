@@ -45,13 +45,13 @@ class Member(models.Model):
     def save(self, *args, **kwargs):
         print("save is called!")
         ## happens on first save
-        model = Mentor_Model()
+        model = Model()
         
         if self.mentors == 'null':
             print("no mentor, assigning recomendtations!")
             job=job_to_feature[self.job]
 
-            mentor_ids = model.predict(list(Member.objects.all().values()),job, self.location)
+            mentor_ids = model.predict_mentor(list(Member.objects.all().values()),job, self.location)
 
             print("recommended mentors" + str(mentor_ids))
             # default : assigning the mentor with the highest rank
@@ -64,7 +64,11 @@ class ContractSpec(models.Model):
     ### [0, 5]
     # javascript,aws,nodejs
     skills = models.TextField()
-
     employer = models.CharField(max_length=100)
 
+    def save(self, *args, **kwargs):
+        model = Model()
+        recommended_candidates= model.match_skills((list(Member.objects.all().values()),self.project, self.location))
     
+        super(ContractSpec, self).save(*args, **kwargs)
+
