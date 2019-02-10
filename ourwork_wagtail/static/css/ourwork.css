@@ -13,6 +13,11 @@
     background: #009688;
 }
 
+.form-group .btn.btn-secondary
+{padding-right: 25px; 
+    padding-left: 25px;
+}
+
 /*! Spectre.css v0.5.8 | MIT License | github.com/picturepan2/spectre */
 /* Manually forked from Normalize.css */
 /* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -3658,6 +3663,11 @@ button.join-btn
     color: #003c36;
 }
 
+.bg-4
+{color: #fff; 
+    background: #005a51;
+}
+
 .home-card
 {height: 50px; 
     margin-top: 30px;
@@ -3686,4 +3696,14 @@ button.join-btn
 header.navbar-rect
 {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+}
+
+.card-title-survey
+{margin-top: 26px; 
+    margin-bottom: 34px;
+}
+
+.onboard-survey .form-group
+{
+    margin-top: 55px;
 }

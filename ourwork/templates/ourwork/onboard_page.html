@@ -12,18 +12,46 @@
     <div class="columns mt-85">
         <div class="column col-9 col-mx-auto">
             <div class="card">
-                <div class="card-header">
-                    <div class="card-title h5">Let's Get Started</div>
+                <div class="card-header bg-4 text-center">
+                    <div class="card-title h1 card-title-survey">Let's Learn About You!</div>
                 </div>
-                <div class="card-subtitle">Collect basic information about you...</div>
+                <div class="card-body">
+                    <div class="container">
+                        <div class="columns">
+                            <div class="column col-4 col-mx-auto">
+                                <form action="" class="onboard-survey">
+                                    <div class="form-group">
+                                        <label for="job_role" class="form-label">1. Most Recent Job Role</label>
+                                        <input id="job_role" type="text" class="form-input">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="industry_select" class="form-label">2. Industry</label>
+                                        <select name="industry" id="industry_select" class="form-select">
+                                            <option value="food">Food Service</option>
+                                            <option value="transport">Transportation</option>
+                                            <option value="security">Security</option>
+                                            <option value="retail">Retail</option>
+                                            <option value="manufacturing">Manufacturing</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="location" class="form-label">3. Location</label>
+                                        <input id="location" type="text" class="form-input">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-secondary p-centered">Next</button>
+                                        <a href="{% slugurl 'select-mentor' %}">
+                                            <button class="btn p-centered">Go to Mentor Selection</button>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-
-<p>this is where we onboard a student and submit to backend...</p>
-<a href="{% slugurl 'select-mentor' %}">
-    <button class="btn">Go to Mentor Selection</button>
-</a>
 {% endblock content %}
