@@ -7,6 +7,8 @@ class Model():
 	def predict_mentor(self,db,job_int, location_int=None,filters=5):
 		df = pd.DataFrame(db)
 		df2=df.loc[df['track_progress'] == '2']
+		if len(df2) == 0:
+			return 'null'
 		if location_int is not None:
 			df2= df2.loc[df['location'] == str(location_int)]
 		rank = []
@@ -19,7 +21,7 @@ class Model():
 		df2['score'] = rank
 		df2=df2.sort_values('score',ascending=False)
 		print(df2[0:filters])
-		return df2[0:filters]['id']
+		return list(df2[0:filters]['id'])
 
 # 1  - student
 	def match_skills(self,db,project,location_int=None,filters=5):
@@ -39,4 +41,4 @@ class Model():
 		df2['score']= rank
 		df2=df2.sort_values('score',ascending=False)
 		print( df2[0:filters])
-		return df2[0:filters]['id']
+		return list(df2[0:filters]['id'])

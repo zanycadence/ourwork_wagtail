@@ -16,57 +16,20 @@ def array_to_string(arr):
         s += str(x) + ","
     return s[:-1]
 
-job_to_feature = {
-     "Transportation": 1
-    ,"Retail": 2
-    ,"Manufacture":3
-    ,"Security":4
-    ,"Food": 5
-
-    }
-
-progress_to_feature ={
-    "Student":1
-    ,"Mentor":2
-    ,"Projects":3
-}
-
-track_to_feature = {
-    "Web Development":1
-    ,"Data Analytics":2
-    ,"Design":3
-}
-
-skills_dict={
-    "HTML":0
-    ,"CSS":1
-    ,"Javascript":2
-    ,"MongoDB":3 
-    ,"SQL":4 
-    ,"Python":5
-    , "R":6 
-    , "Tableau":7 
-    ,"MATLAB":8 
-    , "SAS":9
-    , "Visual Studio":10
-    , "Photoshop":11 
-    , "Illustrator":12
-    , "PHP":13
-    , "NodeJS":14 
-    , "Sketch":15
-    , "Angular":16
-    }
 
 feature_to_job = flip_dict(job_to_feature)
 
 # we need to map strings to integers for making actual predictions
 class Member(models.Model):
+
+    ##id 
+    m_id = models.TextField(default='null')
     ### background - match with the mentor on this
     job = models.CharField(max_length=100)
     location = models.CharField(max_length=100)
 
     ### will be set on create
-    mentors = models.TextField(default='null')
+    #mentors = models.TextField(default='null')
     mentor = models.TextField(default='null')
 
     ### track/specialization, will be set on create after matched with mentor
@@ -78,7 +41,8 @@ class Member(models.Model):
     ### will be logicaly ored with the track that they are on
     skills = models.TextField()
 
-    def save(self, *args, **kwargs):
+    #def save(self, *args, **kwargs):
+    def blah(self, *args, **kwargs):
         print("save is called!")
         ## happens on first save
 
@@ -93,7 +57,7 @@ class Member(models.Model):
             # default : assigning the mentor with the highest rank
             if len(mentor_ids)>0:
                 self.mentors = mentor_ids[0]
-        super(Member, self).save(*args, **kwargs)
+       # super(Member, self).save(*args, **kwargs)
 
         
 class ContractSpec(models.Model):
