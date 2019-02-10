@@ -8,6 +8,30 @@
 {% endblock extra_css %}
 
 {% block content %}
-<p>this is where mentor content goes</p>
-<a href="{% slugurl 'job-pool' %}"><button class="btn">mentor views jobs that need matches</button></a>
+<header class="hero member-profile-banner">
+    <div class="columns">
+        <div class="column col-2 col-ml-auto">
+            <img src="../static/img/mentor_dashboard/sumit@2x.png" alt="" class="img-responsive">
+        </div>
+        <div class="column col-9 member-banner-title">
+            <h2>My Dashboard</h2>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column col-10 col-mx-auto bg-white">
+        <div class="columns">
+            <div class="column col-10 col-mx-auto progress-div"></div>
+        </div>
+        </div>
+    </div>
+</header>
+<div class="columns">
+    <div class="column col-10 col-mx-auto bg-white course-list">
+        {% include './components/mentor_job_list.html' %}
+        <div class="divider"></div>
+        {% include './components/mentor_course_list.html' %}
+        <div class="divider"></div>
+        {% include './components/mentor_mentee_list.html' %}
+    </div>
+</div>
 {% endblock content %}
