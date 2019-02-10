@@ -8,8 +8,14 @@ class MemberResource(ModelResource):
     class Meta:
         queryset = Member.objects.all()
         resource_name = 'member'
-        
         authorization = Authorization()
+
+        #fields=['location','track']
+       # filtering = {
+        #    "location": ALL,
+         #   "location": ALL_WITH_RELATIONS
+        #}
+
 
 class ContractSpecResource(ModelResource):
     class Meta:
